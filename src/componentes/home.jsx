@@ -69,36 +69,6 @@ function Home({ agregarFavorito, favoritos }) {
               />
               <h3>{show.name}</h3>
               <p>{show.genres.join(", ")}</p>
-
-              {esFavorito ? (
-                <button
-                  style={{
-                    background: "#28a745",
-                    color: "#fff",
-                    border: "none",
-                    padding: "8px 12px",
-                    borderRadius: "5px",
-                    cursor: "not-allowed",
-                  }}
-                  disabled
-                >
-                  ✅ En Favoritos
-                </button>
-              ) : (
-                <button
-                  onClick={() => agregarFavorito(show)}
-                  style={{
-                    background: "#007bff",
-                    color: "#fff",
-                    border: "none",
-                    padding: "8px 12px",
-                    borderRadius: "5px",
-                    cursor: "pointer",
-                  }}
-                >
-                  ⭐ Agregar a Favoritos
-                </button>
-              )}
             </div>
           );
         })}

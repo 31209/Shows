@@ -54,9 +54,7 @@ function App() {
           <Link to="/original" className="nav-item">
             🎲 <span>Original</span>
           </Link>
-          <Link to="/favoritos" className="nav-item">
-            ⭐ <span>Favs ({favoritos.length})</span>
-          </Link>
+
         </nav>
       </div>
     </Router>
